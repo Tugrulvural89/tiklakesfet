@@ -1,0 +1,82 @@
+<html>
+<head>
+
+  <style>
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      display: flex;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+  ins {
+    text-decoration: none;
+  }
+  </style>
+</head>
+
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+<div>
+{% if form.is_valid %}
+  <table>
+    <tr>
+      <th>{{ sub_prices }}</th>
+      <th>{{ sub_name }}</th>
+      <th>{{ seller_name }}</th>
+      <th>{{ point }}</th>
+    </tr>
+    <tr>
+      <th>{{ sub_prices1 }}</th>
+      <th>{{ sub_name1 }}</th>
+      <th>{{ seller_name1 }}</th>
+      <th>{{ point1 }}</th>
+    </tr>
+    <tr>
+      <th>{{ sub_prices2 }}</th>
+      <th>{{ sub_name2 }}</th>
+      <th>{{ seller_name2 }}</th>
+      <th>{{ point2 }}</th>
+    </tr>
+    <tr>
+      <th>{{ sub_prices3 }}</th>
+      <th>{{ sub_name3 }}</th>
+      <th>{{ seller_name3 }}</th>
+      <th>{{ point3 }}</th>
+    </tr>
+    <tr>
+      <th>{{ sub_prices4 }}</th>
+      <th>{{ sub_name4 }}</th>
+      <th>{{ seller_name4 }}</th>
+      <th>{{ point4 }}</th>
+    </tr>
+    <tr>
+      <th>{{ sub_prices5 }}</th>
+      <th>{{ sub_name5 }}</th>
+      <th>{{ seller_name5 }}</th>
+      <th>{{ point5 }}</th>
+    </tr>
+  </table>
+{% endif %}
+
+
+
+</div>
+
+
+
+</body>
+</html>

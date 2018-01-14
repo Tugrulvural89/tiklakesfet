@@ -1,0 +1,8 @@
+{{ object.baslik }}
+{{ object.yazi }}
+{{ object.yazi1 }}
+{{ object.yazi2 }}
+{{ object.yazi3 }}
+{{ object.categories }}
+
+{{ categories.name }}

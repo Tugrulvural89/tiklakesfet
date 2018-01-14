@@ -1,0 +1,68 @@
+http://imakewebthings.com/waypoints/api/waypoint/
+
+http://silvestreh.github.io/onScreen/
+
+http://webpop.github.io/jquery.pin/
+
+
+https://github.com/centrifugal/centrifugo
+http://docs.django-cms.org/en/latest/user/tutorial/log-in.html
+
+
+https://django-debug-toolbar.readthedocs.io/en/stable/installation.html
+http://django-allauth.readthedocs.io/en/latest/
+
+https://djangopackages.org/packages/p/django-compressor/
+
+
+sub_prices =  soup.find_all('ins')[1].get_text()
+sub_prices1 = soup.find_all('ins')[2].get_text()
+sub_prices2 = soup.find_all('ins')[3].get_text()
+sub_prices3 = soup.find_all('ins')[4].get_text()
+sub_prices4 = soup.find_all('ins')[5].get_text()
+sub_prices5 = soup.find_all('ins')[6].get_text()
+sub_name = soup.find_all('h3')[1].get_text()
+sub_name1 = soup.find_all('h3')[2].get_text()
+sub_name2 = soup.find_all('h3')[3].get_text()
+sub_name3 = soup.find_all('h3')[4].get_text()
+sub_name4 = soup.find_all('h3')[5].get_text()
+sub_name5 = soup.find_all('h3')[6].get_text()
+seller_name = soup.find_all(class_='sallerName')[1].get_text()
+seller_name1 = soup.find_all(class_='sallerName')[2].get_text()
+seller_name2 = soup.find_all(class_='sallerName')[3].get_text()
+seller_name3 = soup.find_all(class_='sallerName')[4].get_text()
+seller_name4 = soup.find_all(class_='sallerName')[5].get_text()
+seller_name5 = soup.find_all(class_='sallerName')[6].get_text()
+point = soup.find_all(class_='point')[1].get_text()
+point1 = soup.find_all(class_='point')[2].get_text()
+point2 = soup.find_all(class_='point')[3].get_text()
+point3 = soup.find_all(class_='point')[4].get_text()
+point4 = soup.find_all(class_='point')[5].get_text()
+point5 = soup.find_all(class_='point')[6].get_text()
+
+return render(request, '../templates/findall.html', {
+'form':form,
+'sub_prices':sub_prices,
+'sub_prices1':sub_prices1,
+'sub_prices2':sub_prices2,
+'sub_prices3':sub_prices3,
+'sub_prices4':sub_prices4,
+'sub_prices5':sub_prices5,
+'sub_name':sub_name,
+'sub_name1':sub_name1,
+'sub_name2':sub_name2,
+'sub_name3':sub_name3,
+'sub_name4':sub_name4,
+'sub_name5':sub_name5,
+'seller_name':seller_name,
+'seller_name1':seller_name1,
+'seller_name2':seller_name2,
+'seller_name3':seller_name3,
+'seller_name4':seller_name4,
+'seller_name5':seller_name5,
+'point':point,
+'point1':point1,
+'point2':point2,
+'point3':point3,
+'point4':point4,
+'point5':point5})
